@@ -6,6 +6,9 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-scripts": "3.3.0",
@@ -14,11 +17,45 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint .",
+    "test": "jest -u",
+    "test:watch": "jest --watch",
+    "coverage": "jest --collectCoverage --coveragePathIgnorePatterns=src/index.js --coveragePathIgnorePatterns=src/serviceWorker.js"
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "jest": {
+    "verbose": true,
+    "setupFiles": [
+      "./src/setupTests.js"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "moduleNameMapper": {
+      "^.+\\.(css|less|scss)$": "babel-jest",
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js"
+    },
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,mjs}",
+      "!**/node_modules/**",
+      "!**/src/routes/**"
+    ],
+    "roots": [
+      "<rootDir>"
+    ],
+    "testMatch": [
+      "**/__tests__/**/*.[jt]s?(x)",
+      "**/?(*.)+(spec|test).[jt]s?(x)"
+    ],
+    "transform": {
+      "^.+\\.(js|jsx|mjs)$": "<rootDir>/jest/jest-transformer.js"
+    },
+    "transformIgnorePatterns": [
+      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs)$"
+    ]
   },
   "browserslist": {
     "production": [
@@ -31,5 +68,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "enzyme-to-json": "^3.4.3",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.2",
+    "jest": "^24.9.0",
+    "prettier": "^1.19.1"
   }
 }
