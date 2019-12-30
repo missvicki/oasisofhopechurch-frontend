@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/missvicki/oasisofhopechurch-frontend.svg?branch=develop)](https://travis-ci.org/missvicki/oasisofhopechurch-frontend) [![Test Coverage](https://api.codeclimate.com/v1/badges/6fc5a640a9a42458cb08/test_coverage)](https://codeclimate.com/github/missvicki/oasisofhopechurch-frontend/test_coverage)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
