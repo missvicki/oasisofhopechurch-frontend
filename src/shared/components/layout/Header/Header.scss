@@ -1,0 +1,80 @@
+.Header {
+  position: absolute;
+  width: 100%;
+  height: 9.3rem;
+  background-color: whitesmoke;
+}
+
+.head {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.9rem;
+  line-height: 2.9rem;
+  color: #000000;
+  position: absolute;
+  height: 2.9rem;
+  left: 10.375rem;
+  top: 2.8rem;
+}
+
+.menu {
+  position: absolute;
+  height: 2.5rem;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 1.4rem;
+  /* identical to box height */
+  text-align: center;
+
+  color: #000000;
+  position: absolute;
+  width: 32rem;
+  left: 68.7rem;
+  top: 3.6rem;
+}
+
+a {
+  color: black !important;
+}
+a:hover {
+  color: #ed920e !important;
+}
+a.nav-link.active {
+  color: #ed920e !important;
+}
+
+.u-margin-right {
+  margin-right: -19.2rem;
+}
+
+.u-margin-left {
+  margin-left: 2rem;
+}
+
+.donate {
+  position: absolute;
+  width: 14.2425rem;
+  height: 3.7125rem;
+  right: 10.375rem;
+  top: 2.8rem;
+  background: #ed920e;
+  border-radius: 1.875rem;
+  text-align: center;
+}
+.donate:hover {
+  background: #000;
+}
+.btn {
+  color: white !important;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+// .Header .row {
+//   @media (max-width: 26.75em) {
+//     display: none;
+//   }
+// }
