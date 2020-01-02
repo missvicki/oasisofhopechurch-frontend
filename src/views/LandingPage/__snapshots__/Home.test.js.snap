@@ -2,6 +2,7 @@
 
 exports[`Home should not regress 1`] = `
 <div>
+  <Welcome />
   <Header />
 </div>
 `;
