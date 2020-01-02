@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Welcome should not have regressed 1`] = `
+<div
+  className="Welcome"
+>
+  <span
+    className="welcome-tag"
+  >
+    Welcome to Oasis of Hope Church
+  </span>
+  <br />
+  <hr />
+  <span
+    className="sub-tag"
+  >
+    Psalm 27:13
+  </span>
+  <span
+    className="sub-sub-tag"
+  >
+    “I believe to see the goodness of the Lord in the land of the living”.
+  </span>
+</div>
+`;

@@ -1,0 +1,78 @@
+.Welcome {
+  position: absolute;
+  width: 100%;
+  height: 106rem;
+  background: url(../../shared/images/welcome.jpg);
+  background-size: cover;
+
+  @media (max-width: 26.75em) {
+    background-image: url(../../shared/images/welcome.jpg);
+    background-position: 64% 6%;
+  }
+}
+.welcome-tag {
+  position: absolute;
+  width: 89.25rem;
+  height: 10.375rem;
+  left: 49.975rem;
+  top: 38.25rem;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 9.375rem;
+  line-height: 10.1875rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-feature-settings: "kern" off, "liga" off;
+  color: #ffffff;
+}
+hr {
+  position: absolute;
+  width: 1px;
+  height: 39.125rem;
+  left: 94rem;
+  top: 38.25rem;
+  background: #dee2e6;
+  transform: rotate(-90deg);
+}
+.sub-tag {
+  position: absolute;
+  width: 48rem;
+  height: 14.25rem;
+  left: 84rem;
+  top: 58.25rem;
+
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.7625rem;
+  line-height: 2.5625rem;
+  /* or 93% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-feature-settings: "kern" off, "liga" off;
+
+  color: #ed920e;
+}
+.sub-sub-tag {
+  position: absolute;
+  width: 48rem;
+  height: 14.25rem;
+  left: 70rem;
+  top: 65.25rem;
+
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.5625rem;
+  line-height: 2.5625rem;
+  /* or 100% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-feature-settings: "kern" off, "liga" off;
+
+  color: #ffffff;
+}
