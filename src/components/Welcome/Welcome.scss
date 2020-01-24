@@ -1,78 +1,95 @@
 .Welcome {
-  position: absolute;
   width: 100%;
-  height: 106rem;
-  background: url(../../shared/images/welcome.jpg);
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  background: url(../../shared/images/welcome.png);
   background-size: cover;
+  background-repeat: no-repeat;
 
-  @media (max-width: 26.75em) {
-    background-image: url(../../shared/images/welcome.jpg);
-    background-position: 64% 6%;
+  @media (min-width: 320px) and (max-width: 480px) {
+    height: 70rem;
+  }
+  @media (min-width: 481px) and (max-width: 767px) {
+    height: 70rem;
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    height: 75rem;
+  }
+}
+.welcome-pad {
+  width: 85%;
+  margin: 0 auto;
+  padding: 0;
+  margin-top: -19%;
+  @media (min-width: 320px) and (max-width: 767px) {
+    width: 87%;
+    margin-top: -70%;
+  }
+}
+.welcome-note {
+  text-align: center;
+  width: 740px;
+  margin-top: 200px;
+  padding: 0;
+  margin-left: 20%;
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    margin-top: 50px;
+    width: 100%;
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    margin-top: 80px;
+    width: 100%;
   }
 }
 .welcome-tag {
-  position: absolute;
-  width: 89.25rem;
-  height: 10.375rem;
-  left: 49.975rem;
-  top: 38.25rem;
-  font-family: Rubik;
   font-style: normal;
-  font-weight: 500;
-  font-size: 9.375rem;
-  line-height: 10.1875rem;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  font-feature-settings: "kern" off, "liga" off;
+  font-weight: 600;
+  font-size: 70px;
+  line-height: 10rem;
+  letter-spacing: 0.01em;
   color: #ffffff;
-}
-hr {
-  position: absolute;
-  width: 1px;
-  height: 39.125rem;
-  left: 94rem;
-  top: 38.25rem;
-  background: #dee2e6;
-  transform: rotate(-90deg);
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    font-size: 10rem;
+  }
 }
 .sub-tag {
-  position: absolute;
-  width: 48rem;
-  height: 14.25rem;
-  left: 84rem;
-  top: 58.25rem;
-
   font-family: Rubik;
   font-style: normal;
-  font-weight: normal;
-  font-size: 2.7625rem;
-  line-height: 2.5625rem;
-  /* or 93% */
-  display: flex;
-  align-items: center;
-  text-align: center;
-  font-feature-settings: "kern" off, "liga" off;
-
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 2rem;
+  letter-spacing: 0.01em;
   color: #ed920e;
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    font-size: 2rem;
+  }
+  @media (min-width: 481px) and (max-width: 767px) {
+    font-size: 2.3rem;
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    font-size: 2.5rem;
+  }
 }
 .sub-sub-tag {
-  position: absolute;
-  width: 48rem;
-  height: 14.25rem;
-  left: 70rem;
-  top: 65.25rem;
-
-  font-family: Rubik;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 2.5625rem;
-  line-height: 2.5625rem;
-  /* or 100% */
-  display: flex;
-  align-items: center;
-  text-align: center;
-  font-feature-settings: "kern" off, "liga" off;
-
   color: #ffffff;
+  line-height: 3rem;
+  font-weight: normal;
+}
+
+.topbar {
+  height: 300px;
+  background: linear-gradient(#ffffff, #ffffff91, transparent), no-repeat center;
+  @media (min-width: 320px) and (max-width: 480px) {
+    height: 20px;
+  }
+}
+.welcome-line {
+  border: 0.5px solid #dee2e6;
+  width: 40rem;
+  margin-top: 5%;
+  margin-left: 28%;
 }
